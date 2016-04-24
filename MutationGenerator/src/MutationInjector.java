@@ -13,7 +13,7 @@ public class MutationInjector {
 	public static void main(String[] args) throws Exception {
 		ArrayList<File> classes = new ArrayList<File>();
 		File ParentDirectory = new File(System.getProperty("user.dir")).getParentFile();
-		ClassFiles.getClasses(new File(ParentDirectory.getAbsolutePath()+"/target"), classes);
+		ClassFiles.getClasses(new File(ParentDirectory.getAbsolutePath()+"/target/classes"), classes);
 		
 		/* MATH */
 		MATH(classes);
