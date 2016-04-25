@@ -1,0 +1,194 @@
+[INFO] Scanning for projects...
+[INFO] Inspecting build with total of 1 modules...
+[INFO] Installing Nexus Staging features:
+[INFO]   ... total of 1 executions of maven-deploy-plugin replaced with nexus-staging-maven-plugin
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building geo 0.7.5-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ geo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/Shadow/Developer/Proj/Automated-Mutation-Testing/geo/src/main/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ geo ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to /Users/Shadow/Developer/Proj/Automated-Mutation-Testing/geo/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ geo ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ geo ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ geo ---
+[INFO] Surefire report directory: /Users/Shadow/Developer/Proj/Automated-Mutation-Testing/geo/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.github.davidmoten.geo.Base32Test
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Running com.github.davidmoten.geo.CoverageLongsTest
+Coverage [hashes=[J@2f333739, ratio=1.0]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Running com.github.davidmoten.geo.CoverageTest
+Coverage [hashes=[], ratio=1.0]
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Running com.github.davidmoten.geo.db.DatabaseTest
+create table report(report_id bigint primary key auto_increment not null,
+	time bigint not null,
+	lat  double not null, 
+	lon double not null,
+	name varchar2(255) not null,
+	geohash1 char(1) not null,
+	geohash2 char(2) not null,
+	geohash3 char(3) not null,
+	geohash4 char(4) not null,
+	geohash5 char(5) not null,
+	geohash6 char(6) not null,
+	geohash7 char(7) not null,
+	geohash8 char(8) not null,
+	geohash9 char(9) not null,
+	geohash10 char(10) not null,
+	geohash11 char(11) not null,
+	geohash12 char(12) not null
+)
+
+
+inserting...
+creating indexes
+create index idx_report_time on report(time)
+create index idx_geohash_1 on report(geohash1)
+create index idx_geohash_2 on report(geohash2)
+create index idx_geohash_3 on report(geohash3)
+create index idx_geohash_4 on report(geohash4)
+create index idx_geohash_5 on report(geohash5)
+create index idx_geohash_6 on report(geohash6)
+create index idx_geohash_7 on report(geohash7)
+create index idx_geohash_8 on report(geohash8)
+create index idx_geohash_9 on report(geohash9)
+create index idx_geohash_10 on report(geohash10)
+create index idx_geohash_11 on report(geohash11)
+create index idx_geohash_12 on report(geohash12)
+--------------------------------------
+numHashes=2
+querying...
+found=21 from 1000 in 0.018s
+using like:
+querying...
+found=21 from 1000 in 0.005s
+--------------------------------------
+numHashes=6
+querying...
+found=21 from 116 in 0.001s
+using like:
+querying...
+found=21 from 116 in 0.003s
+--------------------------------------
+numHashes=49
+querying...
+found=21 from 31 in 0.0s
+using like:
+querying...
+found=21 from 31 in 0.013s
+--------------------------------------
+numHashes=1128
+querying...
+found=21 from 22 in 0.007s
+using like:
+querying...
+found=21 from 22 in 0.094s
+--------------------------------------
+running multiple range query
+found=21 from 21 in 0.004s
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.854 sec
+Running com.github.davidmoten.geo.DirectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Running com.github.davidmoten.geo.GeoHashTest
+length=1,numHashes=1, ratio=1694.6984366342194, processingTimeFactor=2025.0
+length=2,numHashes=1, ratio=52.95932614481936, processingTimeFactor=63.28125
+length=3,numHashes=4, ratio=6.61991576810242, processingTimeFactor=31.640625
+length=4,numHashes=30, ratio=1.5515427581490047, processingTimeFactor=55.6182861328125
+length=5,numHashes=667, ratio=1.077998978838944, processingTimeFactor=859.1654062271118
+length=6,numHashes=20227, ratio=1.0215838336289036, processingTimeFactor=24690.966195613146
+1694.6984366342194
+drdt drdv drej drem dret drev drsj drsm drst drsv drtj 
+drds drdu dreh drek dres dreu drsh drsk drss drsu drth 
+drde drdg dre5 DRE7 DREE DREG DRS5 DRS7 drse drsg drt5 
+drdd drdf dre4 DRE6 DRED DREF DRS4 DRS6 drsd drsf drt4 
+drd9 drdc dre1 DRE3 DRE9 DREC DRS1 DRS3 drs9 drsc drt1 
+drd8 drdb dre0 DRE2 DRE8 DREB DRS0 DRS2 drs8 drsb drt0 
+dr6x dr6z dr7p DR7R DR7X DR7Z DRKP DRKR drkx drkz drmp 
+dr6w dr6y dr7n DR7Q DR7W DR7Y DRKN DRKQ drkw drky drmn 
+dr6t dr6v dr7j dr7m dr7t dr7v drkj drkm drkt drkv drmj 
+dr6s dr6u dr7h dr7k dr7s dr7u drkh drkk drks drku drmh 
+dr6e dr6g dr75 dr77 dr7e dr7g drk5 drk7 drke drkg drm5 
+
+[dr7q, dr7r, dr7w, dr7x, dr7y, dr7z, dre2, dre3, dre6, dre7, dre8, dre9, dreb, drec, dred, dree, dref, dreg, drkn, drkp, drkq, drkr, drs0, drs1, drs2, drs3, drs4, drs5, drs6, drs7]
+[dr7q, dr7r, dr7w, dr7x, dr7y, dr7z, dre2, dre3, dre6, dre7, dre8, dre9, dreb, drec, dred, dree, dref, dreg, drkn, drkp, drkq, drkr, drs0, drs1, drs2, drs3, drs4, drs5, drs6, drs7]
+[xbpbpbpbpbpb, 800000000002, 800000000001, 2pbpbpbpbpbp, xbpbpbpbpbpc, rzzzzzzzzzzz, 800000000003, 2pbpbpbpbpbr]
+drdr drdx drdz drep drer drex drez drsp drsr drsx drsz 
+drdq drdw drdy dren dreq drew drey drsn drsq drsw drsy 
+drdm drdt drdv drej drem dret drev drsj drsm drst drsv 
+drdk drds drdu dreh drek dres dreu drsh drsk drss drsu 
+drd7 drde drdg dre5 dre7 dree dreg drs5 drs7 drse drsg 
+drd6 drdd drdf dre4 dre6 dred dref drs4 drs6 drsd drsf 
+drd3 drd9 drdc dre1 dre3 dre9 drec drs1 drs3 drs9 drsc 
+drd2 drd8 drdb dre0 dre2 dre8 dreb drs0 drs2 drs8 drsb 
+dr6r dr6x dr6z dr7p dr7r dr7x dr7z drkp drkr drkx drkz 
+dr6q dr6w dr6y dr7n dr7q dr7w dr7y drkn drkq drkw drky 
+dr6m dr6t dr6v dr7j dr7m dr7t dr7v drkj drkm drkt drkv 
+
+f0 f2 f8 
+dp dr dx 
+dn dq dw 
+
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec
+Running com.github.davidmoten.geo.LatLongTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Running com.github.davidmoten.geo.mem.GeomemTest
+maxMemory=1820MB
+memUsed=2MB
+count=0
+memUsed=2MB
+count=1000
+memUsed=10MB
+count=2000
+memUsed=19MB
+count=3000
+memUsed=28MB
+count=4000
+memUsed=21MB
+count=5000
+memUsed=29MB
+count=6000
+memUsed=38MB
+count=7000
+memUsed=46MB
+count=8000
+memUsed=40MB
+count=9000
+memUsed=48MB
+memUsed=56MB
+memUsed=48MB
+1522
+Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.of(a1)]
+Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.absent()]
+Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.of(A1)]
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.023 sec
+Running com.github.davidmoten.geo.util.PreconditionsTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+
+Results :
+
+Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.189 s
+[INFO] Finished at: 2016-04-24T21:02:08-05:00
+[INFO] Final Memory: 22M/210M
+[INFO] ------------------------------------------------------------------------

@@ -4,9 +4,9 @@ import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
-public class ClassAdapter extends ClassVisitor implements Opcodes {
+public class INCREMENTSCv extends ClassVisitor implements Opcodes {
 
-    public ClassAdapter(final ClassVisitor cv) {
+    public INCREMENTSCv(final ClassVisitor cv) {
         super(ASM5, cv);
     }
 
@@ -14,7 +14,7 @@ public class ClassAdapter extends ClassVisitor implements Opcodes {
     public MethodVisitor visitMethod(final int access, final String name,
             final String desc, final String signature, final String[] exceptions) {
         MethodVisitor mv = cv.visitMethod(access, name, desc, signature, exceptions);
-        return mv == null ? null : new MATH(mv, name);
+        return mv == null ? null : new INCREMENTSMv(mv, name);
     }
 }
 

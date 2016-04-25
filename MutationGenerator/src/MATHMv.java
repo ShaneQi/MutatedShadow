@@ -1,18 +1,15 @@
 
 
 import java.util.Hashtable;
-
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
-class MATH extends MethodVisitor implements Opcodes {
+class MATHMv extends MethodVisitor implements Opcodes {
 
-	String mName;
 	Hashtable<Integer, Integer> MathMutator;
 	
-    public MATH(final MethodVisitor mv, String name) {
+    public MATHMv(final MethodVisitor mv, String name) {
         super(ASM5, mv);
-        this.mName=name;
         
         MathMutator = new Hashtable<Integer, Integer>();
         /* + & - */
