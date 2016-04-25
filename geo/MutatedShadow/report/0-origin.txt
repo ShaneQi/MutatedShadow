@@ -29,13 +29,13 @@
  T E S T S
 -------------------------------------------------------
 Running com.github.davidmoten.geo.Base32Test
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
 Running com.github.davidmoten.geo.CoverageLongsTest
 Coverage [hashes=[J@2f333739, ratio=1.0]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.github.davidmoten.geo.CoverageTest
 Coverage [hashes=[], ratio=1.0]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
 Running com.github.davidmoten.geo.db.DatabaseTest
 create table report(report_id bigint primary key auto_increment not null,
 	time bigint not null,
@@ -75,35 +75,35 @@ create index idx_geohash_12 on report(geohash12)
 --------------------------------------
 numHashes=2
 querying...
-found=21 from 1000 in 0.018s
+found=23 from 1000 in 0.018s
 using like:
 querying...
-found=21 from 1000 in 0.005s
+found=23 from 1000 in 0.005s
 --------------------------------------
 numHashes=6
 querying...
-found=21 from 116 in 0.001s
+found=23 from 109 in 0.0s
 using like:
 querying...
-found=21 from 116 in 0.003s
+found=23 from 109 in 0.003s
 --------------------------------------
 numHashes=49
 querying...
-found=21 from 31 in 0.0s
+found=23 from 34 in 0.001s
 using like:
 querying...
-found=21 from 31 in 0.013s
+found=23 from 34 in 0.009s
 --------------------------------------
 numHashes=1128
 querying...
-found=21 from 22 in 0.007s
+found=23 from 24 in 0.009s
 using like:
 querying...
-found=21 from 22 in 0.094s
+found=23 from 24 in 0.177s
 --------------------------------------
 running multiple range query
-found=21 from 21 in 0.004s
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.854 sec
+found=23 from 23 in 0.003s
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.011 sec
 Running com.github.davidmoten.geo.DirectionTest
 Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running com.github.davidmoten.geo.GeoHashTest
@@ -145,9 +145,9 @@ f0 f2 f8
 dp dr dx 
 dn dq dw 
 
-Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 sec
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
 Running com.github.davidmoten.geo.LatLongTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 Running com.github.davidmoten.geo.mem.GeomemTest
 maxMemory=1820MB
 memUsed=2MB
@@ -171,15 +171,15 @@ count=8000
 memUsed=40MB
 count=9000
 memUsed=48MB
-memUsed=56MB
+memUsed=57MB
 memUsed=48MB
-1522
+1556
 Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.of(a1)]
 Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.absent()]
 Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.of(A1)]
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.023 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.047 sec
 Running com.github.davidmoten.geo.util.PreconditionsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
 
 Results :
 
@@ -188,7 +188,7 @@ Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.189 s
-[INFO] Finished at: 2016-04-24T21:02:08-05:00
+[INFO] Total time: 5.365 s
+[INFO] Finished at: 2016-04-24T23:58:08-05:00
 [INFO] Final Memory: 22M/210M
 [INFO] ------------------------------------------------------------------------
