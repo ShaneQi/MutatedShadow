@@ -1,5 +1,5 @@
 ========== MutatedShadow ==========
-MATH: FAIL
-INCREMENTS: FAIL
+1. MATH: FAIL
+2. INCREMENTS: FAIL
 2 mutations total.
 2 mutations are killed.

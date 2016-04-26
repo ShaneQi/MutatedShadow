@@ -29,13 +29,13 @@
  T E S T S
 -------------------------------------------------------
 Running com.github.davidmoten.geo.Base32Test
-Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 sec
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec
 Running com.github.davidmoten.geo.CoverageLongsTest
 Coverage [hashes=[J@2f333739, ratio=1.0]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec
 Running com.github.davidmoten.geo.CoverageTest
 Coverage [hashes=[], ratio=1.0]
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.022 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 sec
 Running com.github.davidmoten.geo.db.DatabaseTest
 create table report(report_id bigint primary key auto_increment not null,
 	time bigint not null,
@@ -75,37 +75,37 @@ create index idx_geohash_12 on report(geohash12)
 --------------------------------------
 numHashes=2
 querying...
-found=23 from 1000 in 0.018s
+found=21 from 1000 in 0.029s
 using like:
 querying...
-found=23 from 1000 in 0.005s
+found=21 from 1000 in 0.007s
 --------------------------------------
 numHashes=6
 querying...
-found=23 from 109 in 0.0s
+found=21 from 137 in 0.002s
 using like:
 querying...
-found=23 from 109 in 0.003s
+found=21 from 137 in 0.004s
 --------------------------------------
 numHashes=49
 querying...
-found=23 from 34 in 0.001s
+found=21 from 38 in 0.001s
 using like:
 querying...
-found=23 from 34 in 0.009s
+found=21 from 38 in 0.015s
 --------------------------------------
 numHashes=1128
 querying...
-found=23 from 24 in 0.009s
+found=21 from 23 in 0.012s
 using like:
 querying...
-found=23 from 24 in 0.177s
+found=21 from 23 in 0.087s
 --------------------------------------
 running multiple range query
-found=23 from 23 in 0.003s
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.011 sec
+found=21 from 21 in 0.004s
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.11 sec
 Running com.github.davidmoten.geo.DirectionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
 Running com.github.davidmoten.geo.GeoHashTest
 length=1,numHashes=1, ratio=1694.6984366342194, processingTimeFactor=2025.0
 length=2,numHashes=1, ratio=52.95932614481936, processingTimeFactor=63.28125
@@ -145,9 +145,9 @@ f0 f2 f8
 dp dr dx 
 dn dq dw 
 
-Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 sec
+Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 sec
 Running com.github.davidmoten.geo.LatLongTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running com.github.davidmoten.geo.mem.GeomemTest
 maxMemory=1820MB
 memUsed=2MB
@@ -158,28 +158,28 @@ memUsed=10MB
 count=2000
 memUsed=19MB
 count=3000
-memUsed=28MB
+memUsed=27MB
 count=4000
 memUsed=21MB
 count=5000
 memUsed=29MB
 count=6000
-memUsed=38MB
+memUsed=37MB
 count=7000
 memUsed=46MB
 count=8000
 memUsed=40MB
 count=9000
 memUsed=48MB
-memUsed=57MB
+memUsed=56MB
 memUsed=48MB
-1556
+1498
 Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.of(a1)]
 Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.absent()]
 Info [lat=-15.0, lon=120.0, time=500, value=A1, id=Optional.of(A1)]
-Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.047 sec
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.992 sec
 Running com.github.davidmoten.geo.util.PreconditionsTest
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
 
 Results :
 
@@ -188,7 +188,7 @@ Tests run: 92, Failures: 0, Errors: 0, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 5.365 s
-[INFO] Finished at: 2016-04-24T23:58:08-05:00
+[INFO] Total time: 6.605 s
+[INFO] Finished at: 2016-04-26T12:44:00-05:00
 [INFO] Final Memory: 22M/210M
 [INFO] ------------------------------------------------------------------------

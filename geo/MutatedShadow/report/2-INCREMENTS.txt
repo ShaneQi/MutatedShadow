@@ -14,8 +14,8 @@
  T E S T S
 -------------------------------------------------------
 Running com.github.davidmoten.geo.Base32Test
-Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.076 sec <<< FAILURE!
-testDecodeToPositiveInteger(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.011 sec  <<< ERROR!
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.084 sec <<< FAILURE!
+testDecodeToPositiveInteger(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.01 sec  <<< ERROR!
 java.lang.ExceptionInInitializerError
 	at com.github.davidmoten.geo.Base32Test.testDecodeToPositiveInteger(Base32Test.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -51,7 +51,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.Base32.<clinit>(Base32.java:34)
 	... 30 more
 
-testEncodePadsToLength12(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.003 sec  <<< ERROR!
+testEncodePadsToLength12(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.Base32
 	at com.github.davidmoten.geo.Base32Test.testEncodePadsToLength12(Base32Test.java:66)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -117,7 +117,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-getCoverageOfConstructorAndCheckConstructorIsPrivate(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.001 sec  <<< ERROR!
+getCoverageOfConstructorAndCheckConstructorIsPrivate(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.003 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.Base32
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -188,7 +188,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testDecodeManyZeros(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.001 sec  <<< ERROR!
+testDecodeManyZeros(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.Base32
 	at com.github.davidmoten.geo.Base32Test.testDecodeManyZeros(Base32Test.java:50)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -221,7 +221,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testEncodePositiveInteger(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.002 sec  <<< ERROR!
+testEncodePositiveInteger(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.Base32
 	at com.github.davidmoten.geo.Base32Test.testEncodePositiveInteger(Base32Test.java:19)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -320,7 +320,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testGetCharIndexThrowsExceptionWhenNonBase32CharacterGiven(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.002 sec  <<< ERROR!
+testGetCharIndexThrowsExceptionWhenNonBase32CharacterGiven(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.Exception: Unexpected exception, expected<java.lang.IllegalArgumentException> but was<java.lang.NoClassDefFoundError>
 	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:28)
 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
@@ -357,7 +357,7 @@ Caused by: java.lang.NoClassDefFoundError: Could not initialize class com.github
 	at org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:19)
 	... 21 more
 
-testEncodesNegativeInteger(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0.001 sec  <<< ERROR!
+testEncodesNegativeInteger(com.github.davidmoten.geo.Base32Test)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.Base32
 	at com.github.davidmoten.geo.Base32Test.testEncodesNegativeInteger(Base32Test.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -425,7 +425,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 
 Running com.github.davidmoten.geo.CoverageLongsTest
 Coverage [hashes=[J@7382f612, ratio=1.0]
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE!
 testCoverageLongsOfAnAreaThatCantBeCoveredWithHashOfLengthOne(com.github.davidmoten.geo.CoverageLongsTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ExceptionInInitializerError
 	at com.github.davidmoten.geo.GeoHash.widthDegrees(GeoHash.java:745)
@@ -467,7 +467,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
 
 Running com.github.davidmoten.geo.CoverageTest
 Coverage [hashes=[], ratio=1.0]
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.005 sec <<< FAILURE!
 testCoverageOfAnAreaThatCantBeCoveredWithHashOfLengthOne(com.github.davidmoten.geo.CoverageTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.GeoHash$HashWidths
 	at com.github.davidmoten.geo.GeoHash.widthDegrees(GeoHash.java:745)
@@ -527,8 +527,8 @@ create table report(report_id bigint primary key auto_increment not null,
 
 
 inserting...
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.414 sec <<< FAILURE!
-testCreateDatabaseInsertRecordsAndRunBenchmarkQueries(com.github.davidmoten.geo.db.DatabaseTest)  Time elapsed: 0.41 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.485 sec <<< FAILURE!
+testCreateDatabaseInsertRecordsAndRunBenchmarkQueries(com.github.davidmoten.geo.db.DatabaseTest)  Time elapsed: 0.484 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -565,10 +565,10 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 Running com.github.davidmoten.geo.DirectionTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec
 Running com.github.davidmoten.geo.GeoHashTest
-Tests run: 64, Failures: 0, Errors: 45, Skipped: 0, Time elapsed: 0.136 sec <<< FAILURE!
-testHeightDegreesForLengthEqualsZero(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.005 sec  <<< ERROR!
+Tests run: 64, Failures: 0, Errors: 45, Skipped: 0, Time elapsed: 0.178 sec <<< FAILURE!
+testHeightDegreesForLengthEqualsZero(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.008 sec  <<< ERROR!
 java.lang.ExceptionInInitializerError
 	at com.github.davidmoten.geo.GeoHash.heightDegrees(GeoHash.java:687)
 	at com.github.davidmoten.geo.GeoHashTest.testHeightDegreesForLengthEqualsZero(GeoHashTest.java:452)
@@ -606,7 +606,7 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash$HashHeights.<clinit>(GeoHash.java:692)
 	... 31 more
 
-testHashContainsNearLongitudeBoundary(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
+testHashContainsNearLongitudeBoundary(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.004 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -641,7 +641,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCoverBoundingBoxWithMaxHashesReturnsMoreThanMax(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testCoverBoundingBoxWithMaxHashesReturnsMoreThanMax(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.012 sec  <<< ERROR!
 java.lang.IllegalArgumentException: length must be greater than zero
 	at com.github.davidmoten.geo.util.Preconditions.checkArgument(Preconditions.java:29)
 	at com.github.davidmoten.geo.GeoHash.coverBoundingBoxLongs(GeoHash.java:645)
@@ -677,7 +677,7 @@ java.lang.IllegalArgumentException: length must be greater than zero
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testRightNeighbourCloseTo180Longitude(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testRightNeighbourCloseTo180Longitude(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -713,7 +713,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testAdjacentTop(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testAdjacentTop(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -749,7 +749,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testDisplayOfCoverages(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.007 sec  <<< ERROR!
+testDisplayOfCoverages(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.GeoHash$HashWidths
 	at com.github.davidmoten.geo.GeoHash.widthDegrees(GeoHash.java:745)
 	at com.github.davidmoten.geo.GeoHash.coverBoundingBoxLongs(GeoHash.java:646)
@@ -785,7 +785,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCoverBoundingBoxWithOptimalHashLengthAroundBoston(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.004 sec  <<< ERROR!
+testCoverBoundingBoxWithOptimalHashLengthAroundBoston(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.IllegalArgumentException: length must be greater than zero
 	at com.github.davidmoten.geo.util.Preconditions.checkArgument(Preconditions.java:29)
 	at com.github.davidmoten.geo.GeoHash.coverBoundingBoxLongs(GeoHash.java:645)
@@ -822,7 +822,7 @@ java.lang.IllegalArgumentException: length must be greater than zero
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testMovingHashCentreRightBySlighltyMoreThanHalfGeoHashWidthGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
+testMovingHashCentreRightBySlighltyMoreThanHalfGeoHashWidthGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -859,7 +859,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testHashContains(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testHashContains(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHashTest.testHashContains(GeoHashTest.java:479)
@@ -929,7 +929,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testTop(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testTop(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.003 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -1036,7 +1036,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testRight(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testRight(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -1073,7 +1073,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testLeft(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testLeft(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -1146,7 +1146,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testNeighboursAtLongitude180(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.004 sec  <<< ERROR!
+testNeighboursAtLongitude180(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -1218,7 +1218,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testMovingHashCentreUpByGeoHashHeightGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testMovingHashCentreUpByGeoHashHeightGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -1362,7 +1362,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testGeoHashWidthDegrees(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testGeoHashWidthDegrees(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -1397,7 +1397,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testWhiteHouseHashDecode(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testWhiteHouseHashDecode(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHashTest.testWhiteHouseHashDecode(GeoHashTest.java:89)
@@ -1431,7 +1431,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testWhiteHouseHashEncodeUsingLatLongObject(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testWhiteHouseHashEncodeUsingLatLongObject(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.008 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -1467,7 +1467,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testWhiteHouseHashEncode(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testWhiteHouseHashEncode(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -1503,7 +1503,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testGeoHashHeightDegrees(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testGeoHashHeightDegrees(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -1573,7 +1573,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testNeighbouringHashes(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.01 sec  <<< ERROR!
+testNeighbouringHashes(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.012 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -1610,7 +1610,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testTopNeighbourCloseToNorthPole(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testTopNeighbourCloseToNorthPole(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -1789,7 +1789,7 @@ java.lang.IllegalArgumentException: length must be greater than zero
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testCoverBoundingBoxWithHashLength3AroundBoston(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testCoverBoundingBoxWithHashLength3AroundBoston(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.GeoHash$HashWidths
 	at com.github.davidmoten.geo.GeoHash.widthDegrees(GeoHash.java:745)
 	at com.github.davidmoten.geo.GeoHash.coverBoundingBoxLongs(GeoHash.java:646)
@@ -1862,7 +1862,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testMovingHashCentreUpBySlightlyMoreThanHalfGeoHashHeightGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testMovingHashCentreUpBySlightlyMoreThanHalfGeoHashHeightGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -1935,7 +1935,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testNeighboursAtNorthPole(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testNeighboursAtNorthPole(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -2045,7 +2045,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testAdjacentLeft(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testAdjacentLeft(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -2081,7 +2081,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testFromGeoHashDotOrg(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0 sec  <<< ERROR!
+testFromGeoHashDotOrg(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -2117,7 +2117,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testMovingHashCentreUpBySlightlyLessThanHalfGeoHashHeightGivesSameHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.003 sec  <<< ERROR!
+testMovingHashCentreUpBySlightlyLessThanHalfGeoHashHeightGivesSameHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.GeoHash$HashHeights
 	at com.github.davidmoten.geo.GeoHash.heightDegrees(GeoHash.java:687)
 	at com.github.davidmoten.geo.GeoHashTest.testMovingHashCentreUpBySlightlyLessThanHalfGeoHashHeightGivesSameHash(GeoHashTest.java:231)
@@ -2151,7 +2151,7 @@ java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testMovingHashCentreRightByGeoHashWidthGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.001 sec  <<< ERROR!
+testMovingHashCentreRightByGeoHashWidthGivesAdjacentHash(com.github.davidmoten.geo.GeoHashTest)  Time elapsed: 0.002 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.decodeHash(GeoHash.java:439)
 	at com.github.davidmoten.geo.GeoHash.adjacentHashAtBorder(GeoHash.java:164)
@@ -2189,14 +2189,14 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
 Running com.github.davidmoten.geo.LatLongTest
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 sec
 Running com.github.davidmoten.geo.mem.GeomemTest
 maxMemory=1820MB
 memUsed=5MB
 count=0
 memUsed=5MB
-Tests run: 7, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.168 sec <<< FAILURE!
-testGeomemManyEntries(com.github.davidmoten.geo.mem.GeomemTest)  Time elapsed: 0.161 sec  <<< ERROR!
+Tests run: 7, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.14 sec <<< FAILURE!
+testGeomemManyEntries(com.github.davidmoten.geo.mem.GeomemTest)  Time elapsed: 0.134 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -2275,7 +2275,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testGeomemFindWhenOneEntryInsideRegion(com.github.davidmoten.geo.mem.GeomemTest)  Time elapsed: 0 sec  <<< ERROR!
+testGeomemFindWhenOneEntryInsideRegion(com.github.davidmoten.geo.mem.GeomemTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.ArrayIndexOutOfBoundsException: -1
 	at com.github.davidmoten.geo.GeoHash.fromLongToString(GeoHash.java:375)
 	at com.github.davidmoten.geo.GeoHash.encodeHash(GeoHash.java:358)
@@ -2391,7 +2391,7 @@ java.lang.ArrayIndexOutOfBoundsException: -1
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
 
-testGeomemFindWhenNoData(com.github.davidmoten.geo.mem.GeomemTest)  Time elapsed: 0 sec  <<< ERROR!
+testGeomemFindWhenNoData(com.github.davidmoten.geo.mem.GeomemTest)  Time elapsed: 0.001 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: Could not initialize class com.github.davidmoten.geo.GeoHash$HashWidths
 	at com.github.davidmoten.geo.GeoHash.widthDegrees(GeoHash.java:745)
 	at com.github.davidmoten.geo.GeoHash.coverBoundingBoxLongs(GeoHash.java:646)
@@ -2507,9 +2507,9 @@ Tests run: 92, Failures: 0, Errors: 66, Skipped: 0
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD FAILURE
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time: 2.744 s
-[INFO] Finished at: 2016-04-24T23:58:18-05:00
-[INFO] Final Memory: 15M/220M
+[INFO] Total time: 3.344 s
+[INFO] Finished at: 2016-04-26T12:44:10-05:00
+[INFO] Final Memory: 15M/227M
 [INFO] ------------------------------------------------------------------------
 [ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-cli) on project geo: There are test failures.
 [ERROR] 
