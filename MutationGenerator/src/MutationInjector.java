@@ -23,7 +23,18 @@ public class MutationInjector {
 			System.out.println("======= INCREMENTS =======");
 			injectINCREMENTS(classes);
 		}
-
+		else if (args[0].equals("INVERTNEGS")) {
+			System.out.println("======= INVERTNEGS =======");
+			injectINVERTNEGS(classes);
+		}
+		else if (args[0].equals("CONDBOUND")) {
+			System.out.println("======= CONDBOUND =======");
+			injectCONDBOUND(classes);
+		}
+		else if (args[0].equals("NEGCOND")) {
+			System.out.println("======= NEGCOND =======");
+			injectNEGCOND(classes);
+		}
 	}
 	
 	private static void injectINCREMENTS(ArrayList<File> classes) throws IOException {
@@ -56,6 +67,60 @@ public class MutationInjector {
 				fos.write(cw.toByteArray());
 				fos.close();	
 				System.out.println("Injecting MATH mutators into "+ f.getName() + ",");
+			} catch (IllegalArgumentException e) {
+				System.out.println("Skiped a none-class file: "+ f.getName());
+			}
+		}
+	}
+	
+	private static void injectINVERTNEGS(ArrayList<File> classes) throws IOException {
+		for (File f : classes) {
+			FileInputStream is = new FileInputStream(f);
+			try {
+				ClassReader cr = new ClassReader(is);
+				ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
+				INVERTNEGSCv ca = new INVERTNEGSCv(cw);
+				cr.accept(ca, 0);
+				FileOutputStream fos = new FileOutputStream(f.getAbsoluteFile());
+				fos.write(cw.toByteArray());
+				fos.close();	
+				System.out.println("Injecting INVERTNEGS mutators into "+ f.getName() + ",");
+			} catch (IllegalArgumentException e) {
+				System.out.println("Skiped a none-class file: "+ f.getName());
+			}
+		}
+	}
+	
+	private static void injectCONDBOUND(ArrayList<File> classes) throws IOException {
+		for (File f : classes) {
+			FileInputStream is = new FileInputStream(f);
+			try {
+				ClassReader cr = new ClassReader(is);
+				ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
+				CONDBOUNDCv ca = new CONDBOUNDCv(cw);
+				cr.accept(ca, 0);
+				FileOutputStream fos = new FileOutputStream(f.getAbsoluteFile());
+				fos.write(cw.toByteArray());
+				fos.close();	
+				System.out.println("Injecting COUNDBOUND mutators into "+ f.getName() + ",");
+			} catch (IllegalArgumentException e) {
+				System.out.println("Skiped a none-class file: "+ f.getName());
+			}
+		}
+	}
+	
+	private static void injectNEGCOND(ArrayList<File> classes) throws IOException {
+		for (File f : classes) {
+			FileInputStream is = new FileInputStream(f);
+			try {
+				ClassReader cr = new ClassReader(is);
+				ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES);
+				NEGCONDCv ca = new NEGCONDCv(cw);
+				cr.accept(ca, 0);
+				FileOutputStream fos = new FileOutputStream(f.getAbsoluteFile());
+				fos.write(cw.toByteArray());
+				fos.close();	
+				System.out.println("Injecting NEGCOND mutators into "+ f.getName() + ",");
 			} catch (IllegalArgumentException e) {
 				System.out.println("Skiped a none-class file: "+ f.getName());
 			}
