@@ -1,4 +1,5 @@
 import java.util.Hashtable;
+import java.util.Random;
 
 import org.objectweb.asm.Label;
 import org.objectweb.asm.MethodVisitor;
@@ -8,8 +9,12 @@ public class CONDBOUNDMv extends MethodVisitor implements Opcodes{
 	
 	Hashtable<Integer, Integer> MathMutator;
 	
+	int count;
+	
     public CONDBOUNDMv(final MethodVisitor mv, String name) {
         super(ASM5, mv);
+        
+        count = 1;
         
         MathMutator = new Hashtable<Integer, Integer>();
         
@@ -22,11 +27,18 @@ public class CONDBOUNDMv extends MethodVisitor implements Opcodes{
     
 	@Override
 	public void visitJumpInsn(int opcode, Label label) {
-		if (MathMutator.containsKey(opcode)) {
-			super.visitJumpInsn(MathMutator.get(opcode), label);
-		} else {
-			super.visitJumpInsn(opcode, label);
-		}
+		if (count != 0) {
+			if (MathMutator.containsKey(opcode)) {
+				Random rand = new Random();
+				int randomNum = Math.abs(rand.nextInt())%2;
+				if (randomNum == 1) {
+					super.visitJumpInsn(MathMutator.get(opcode), label);
+					count--;	
+					return;
+				}
+			} 
+		} 
+		super.visitJumpInsn(opcode, label);
 	}
 
 }

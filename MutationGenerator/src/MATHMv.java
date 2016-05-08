@@ -1,6 +1,8 @@
 
 
 import java.util.Hashtable;
+import java.util.Random;
+
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
@@ -8,8 +10,12 @@ class MATHMv extends MethodVisitor implements Opcodes {
 
 	Hashtable<Integer, Integer> MathMutator;
 	
+	int count;
+	
     public MATHMv(final MethodVisitor mv, String name) {
         super(ASM5, mv);
+        
+        count = 1;
         
         MathMutator = new Hashtable<Integer, Integer>();
         /* + & - */
@@ -62,10 +68,17 @@ class MATHMv extends MethodVisitor implements Opcodes {
 
 	@Override
 	public void visitInsn(int opcode) {
-		if (MathMutator.containsKey(opcode)) {
-			super.visitInsn(MathMutator.get(opcode));
-		} else {
-			super.visitInsn(opcode);
-		}
+		if (count != 0) {
+			if (MathMutator.containsKey(opcode)) {
+				Random rand = new Random();
+				int randomNum = Math.abs(rand.nextInt())%2;
+				if (randomNum == 1) {
+					super.visitInsn(MathMutator.get(opcode));
+					count--;	
+					return;
+				}
+			} 
+		} 
+		super.visitInsn(opcode);
 	}
 }
